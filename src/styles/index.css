@@ -5,6 +5,9 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Dropdown Styles */

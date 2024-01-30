@@ -1,14 +1,13 @@
 {
-  "name": "dv01",
+  "name": "loan-analysis",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.21",
+    "@testing-library/react-hooks": "^8.0.1",
     "papaparse": "^4.6.3",
     "react": "^16.8.0",
-    "react-charts": "^2.0.0-beta.7",
     "react-dom": "^16.8.0",
-    "react-resizable": "^3.0.5",
+    "react-hook": "^0.0.1",
     "react-scripts": "2.1.3",
     "react-table": "^7.8.0",
     "recharts": "^1.4.2"

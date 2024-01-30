@@ -34,8 +34,6 @@ const TableChartComponent = ({ columns, data }) => {
                 })
                 }
             </tbody>
-
-
         </table>
     );
 

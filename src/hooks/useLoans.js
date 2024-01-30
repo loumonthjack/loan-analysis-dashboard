@@ -24,8 +24,8 @@ const useLoanData = () => {
             accessor: key
         }));
     }, [aggregatedData]);
-
     return { loans, loading, error, filters, setFilters, resetFilters, updatedLoans, aggregatedData, columns };
+
 };
 
 export default useLoanData;
