@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Dropdown Styles */
+select {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #d3d3d3;
+    background-color: white;
+    font-size: 16px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    max-width: 100%;
+    /* Ensure table does not exceed its container */
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #eaeaea;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+        margin-bottom: 20px;
+    }
+
+    table,
+    table thead,
+    table tbody,
+    table th,
+    table td,
+    table tr {
+        display: block;
+    }
+
+    table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table tr {
+        border: 1px solid #ccc;
+    }
+
+    table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    table td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        text-transform: uppercase;
+        content: attr(data-label);
+    }
+
+    .center-content {
+        flex-direction: column;
+    }
+}

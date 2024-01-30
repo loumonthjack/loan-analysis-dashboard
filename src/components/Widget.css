@@ -1,0 +1,35 @@
+.widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.graph-widget {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 10px;
+    flex: 1;
+    width: auto;
+    min-width: 250px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.graph-widget-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    overflow: auto;
+}
