@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 import './styles/App.css';
-import './styles/index.css';
 import BarGraph from './components/BarGraph';
 import TableChart from './components/TableChart';
 import Widget from './components/Widget';
@@ -48,12 +47,14 @@ const App = () => {
           </div>
         </section>
 
-        <section className='center-content'>
-          <h3>Filters</h3>
+        <section className="filters-section">
           <div className="filters-container">
-            <FilterDropdowns filters={filters} uniqueDropdownOptions={uniqueDropdownOptions} handleFilterChange={handleFilterChange} />
+            <div className="filters-actions">
+              <FilterDropdowns filters={filters} uniqueDropdownOptions={uniqueDropdownOptions} handleFilterChange={handleFilterChange} />
+              <button onClick={resetFilters}>Reset Filters</button>
+            </div>
           </div>
-          <button onClick={resetFilters}>Reset Filters</button></section>
+        </section>
       </main>
     </div>
   );

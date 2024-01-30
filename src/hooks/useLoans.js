@@ -20,7 +20,7 @@ const useLoanData = () => {
     const columns = useMemo(() => {
         const gradeKeys = Object.keys(aggregatedData[0] || {});
         return gradeKeys.map(key => ({
-            Header: key.replace('_', ' ').toUpperCase(),
+            Header: key.replace('_', ' ').slice(0, 1).toUpperCase() + key.replace('_', ' ').slice(1),
             accessor: key
         }));
     }, [aggregatedData]);

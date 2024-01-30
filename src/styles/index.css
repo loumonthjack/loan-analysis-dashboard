@@ -1,16 +1,14 @@
-/* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f1f1f1;
+    color: #000000;
     line-height: 1.6;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Dropdown Styles */
 select {
     padding: 10px;
     margin-right: 10px;
@@ -21,11 +19,10 @@ select {
     font-size: 16px;
 }
 
-/* Button Styles */
 button {
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #17a2b8;
+    background-color: #343ecb;
     color: white;
     border: none;
     border-radius: 8px;
@@ -35,18 +32,15 @@ button {
 }
 
 button:hover {
-    background-color: #138496;
+    background-color: #cb348a;
     transform: scale(1.05);
 }
 
-/* Table Styles */
 table {
     width: 100%;
     max-width: 100%;
-    /* Ensure table does not exceed its container */
     border-collapse: collapse;
     margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
@@ -58,7 +52,7 @@ td {
 }
 
 th {
-    background-color: #f8f8f8;
+    background-color: #f1f1f1;
     font-weight: 600;
 }
 
@@ -74,7 +68,23 @@ tr:nth-child(even) {
     margin-top: 10px;
 }
 
-/* Responsive Table */
+.widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.filters-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
 @media screen and (max-width: 600px) {
     table {
         border: 0;
@@ -88,6 +98,8 @@ tr:nth-child(even) {
     table td,
     table tr {
         display: block;
+        background-color: #f1f1f1;
+        border-radius: 8px 8px 8px 8px;
     }
 
     table thead tr {
@@ -102,10 +114,11 @@ tr:nth-child(even) {
 
     table td {
         border: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 0.75px solid #ccc;
         position: relative;
         padding-left: 50%;
         text-align: left;
+        border-radius: 8px 8px 8px 8px
     }
 
     table td:before {
@@ -116,11 +129,16 @@ tr:nth-child(even) {
         padding-right: 10px;
         white-space: nowrap;
         font-weight: bold;
-        text-transform: uppercase;
         content: attr(data-label);
     }
 
     .center-content {
         flex-direction: column;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        margin-top: 5%;
+        margin-bottom: 10%;
     }
 }

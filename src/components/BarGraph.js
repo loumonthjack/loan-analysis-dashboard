@@ -13,7 +13,7 @@ const BarChartComponent = ({ data }) => (
     <YAxis dataKey="totalBalance" />
     <Tooltip />
     <Legend />
-    <Bar dataKey="totalBalance" fill="#82ca9d" />
+    <Bar dataKey="totalBalance" fill="#34cb75" background={{ fill: '#f1f1f1' }} />
   </BarChart>
 );
 
