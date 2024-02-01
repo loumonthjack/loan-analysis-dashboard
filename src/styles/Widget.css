@@ -1,6 +1,6 @@
 .graph-widget {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -11,16 +11,20 @@
     box-sizing: border-box;
     overflow-x: auto;
 }
-
 .graph-widget-title {
     margin-bottom: 20px;
     text-align: center;
+    color: #007BFF;
 }
-
 .graph-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 200px;
     overflow: auto;
+}
+@media screen and (max-width: 1172px) {
+    .graph-container {
+        justify-content: space-between;
+    }
 }

@@ -10,10 +10,10 @@ const BarChartComponent = ({ data }) => (
   >
     <CartesianGrid strokeDasharray="3 3" />
     <XAxis dataKey="grade" />
-    <YAxis dataKey="totalBalance" />
+    <YAxis dataKey="total" />
     <Tooltip />
     <Legend />
-    <Bar dataKey="totalBalance" fill="#34cb75" background={{ fill: '#f1f1f1' }} />
+    <Bar dataKey="total" fill="#34cb75" background={{ fill: '#f1f1f1' }} />
   </BarChart>
 );
 

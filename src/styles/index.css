@@ -1,41 +1,38 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 20px;
-    background-color: #f1f1f1;
-    color: #000000;
+    background-color: #e0f7fa;
+    border: none;
+    color: #006064;
     line-height: 1.6;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 select {
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    border: 2px solid #d3d3d3;
-    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #ff7043;
+    background-color: #ffffff;
     font-size: 16px;
+    color: #006064;
 }
-
 button {
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #343ecb;
+    background-color: #ff7043;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     font-size: 16px;
 }
-
 button:hover {
-    background-color: #cb348a;
-    transform: scale(1.05);
+    background-color: #bf360c;
 }
-
 table {
     width: 100%;
     max-width: 100%;
@@ -85,7 +82,14 @@ tr:nth-child(even) {
     margin-bottom: 5%;
 }
 
-@media screen and (max-width: 600px) {
+.no-content {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1440px) {
     table {
         border: 0;
         margin-bottom: 20px;
@@ -140,5 +144,10 @@ tr:nth-child(even) {
         flex-direction: column;
         margin-top: 5%;
         margin-bottom: 10%;
+    }
+
+    .widgets-container {
+        gap: 10px;
+        justify-content: center;
     }
 }

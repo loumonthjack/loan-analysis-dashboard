@@ -38,7 +38,7 @@ export const calculateTotalBalanceByGrade = (data) => {
     const loanByGradeTotal = Object.values(loanDataByGrade)
         .map(item => ({
             ...item,
-            totalBalance: Math.round(item.totalBalance),
+            total: Math.round(item.totalBalance),
         }))
     return loanByGradeTotal;
 };

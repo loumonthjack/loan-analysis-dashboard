@@ -29,6 +29,13 @@ const App = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   const dataAvailable = sumOfLoans.length > 0;
+  
+  const noContent = (
+    <div className='no-content'>
+      <p>No data to display</p>
+    </div>
+  );
+
   return (
     <div className="App">
       <header>
@@ -38,12 +45,13 @@ const App = () => {
       <main>
         <section className="center-content">
           <div className="widgets-container">
-            <Widget title="Bar Graph" >
-              {dataAvailable ? <BarGraph data={sumOfLoans} /> : <p>No data to display</p>}
-            </Widget>
             <Widget title="Table Chart" >
-              {dataAvailable ? <TableChart columns={columns} data={formattedSumOfLoans} /> : <p>No data to display</p>}
+              {dataAvailable ? <TableChart columns={columns} data={formattedSumOfLoans} /> : noContent}
             </Widget>
+            <Widget title="Bar Graph" >
+              {dataAvailable ? <BarGraph data={sumOfLoans} /> : noContent}
+            </Widget>
+
           </div>
         </section>
 

@@ -11,7 +11,7 @@ const useLoanData = () => {
         const gradeTotals = {};
         updatedLoans.forEach(item => {
             const gradeKey = `grade_${item.grade}`;
-            gradeTotals[gradeKey] = (gradeTotals[gradeKey] || '') + '$' + item.totalBalance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            gradeTotals[gradeKey] = (gradeTotals[gradeKey] || '') + '$' + item.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         });
 
         return [gradeTotals];
